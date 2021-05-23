@@ -1,4 +1,9 @@
-export const api = 'http://65.0.9.242:4000/api'
+const baseUrl = location.hostname === 'localhost'
+    ? "http://localhost:4000"
+    : "https://bazaar-by-mayur-kamble.herokuapp.com"
+
+export const api = `${baseUrl}/api`
+
 export const generatePublicUrl = (fileName) => {
-    return `http://65.0.9.242:4000/public/${fileName}`
+    return `${baseUrl}/public/${fileName}`
 }
