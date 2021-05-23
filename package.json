@@ -30,6 +30,10 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cse-mkamble/client-frontend-admin.git"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
